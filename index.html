@@ -34,6 +34,10 @@
 
         }
 
+        #max-vote {
+
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -53,8 +57,24 @@
         <p>A Karácsony története több száz éves hagyományokra épül, melyek a kereszténység születéséhez és a téli napfordulóhoz kapcsolódnak. A mai ünnep a szeretet, a család és az adakozás jegyében telik.</p>
     </div>
 
+
+    
+
     <div class="container">
         <h2 class="text-center mt-5">Válaszd ki az ajándékot!</h2>
+        <div class="container">
+
+        
+            <!-- Itt jelenik meg a legtöbb szavazat -->
+            <div id="max-vote" class="alert alert-info text-center">
+                Még nincs szavazat.
+            </div>
+        
+            <div class="row">
+                <!-- Az ajándékok kártyái itt lesznek -->
+            </div>
+        </div>
+        
         <div class="row">
             <div class="col-md-3">
                 <div class="card">
@@ -67,7 +87,7 @@
                 </div>
             </div>
 
-    
+            
 
             <div class="col-md-3">
                 <div class="card">

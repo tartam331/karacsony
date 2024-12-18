@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karácsonyi Weboldal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .card {
+            margin: 10px;
+        }
+        #story {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Karácsony</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showStory()">Karácsonyi Történet</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="story">
+        <h2>Karácsonyi Történet</h2>
+        <p>A Karácsony története több száz éves hagyományokra épül, melyek a kereszténység születéséhez és a téli napfordulóhoz kapcsolódnak. A mai ünnep a szeretet, a család és az adakozás jegyében telik.</p>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center mt-5">Válaszd ki az ajándékot!</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/adidas-labda-vb2022-qatar-rihla-lge.jpg" class="card-img-top" alt="Ajándék 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Labda</h5>
+                        <button class="btn btn-primary voteBtn" data-id="1">Erre szavazok</button>
+                        <p class="vote-count" id="vote-1">0 szavazat</p>
+                    </div>
+                </div>
+            </div>
+
+    
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/jatekauto.jpg" class="card-img-top" alt="Ajándék 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Játék autó</h5>
+                        <button class="btn btn-primary voteBtn" data-id="2">Erre szavazok</button>
+                        <p class="vote-count" id="vote-2">0 szavazat</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/lego.jpg" class="card-img-top" alt="Ajándék 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Lego</h5>
+                        <button class="btn btn-primary voteBtn" data-id="3">Erre szavazok</button>
+                        <p class="vote-count" id="vote-3">0 szavazat</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/konyv.jpg" class="card-img-top" alt="Ajándék 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Könyv</h5>
+                        <button class="btn btn-primary voteBtn" data-id="4">Erre szavazok</button>
+                        <p class="vote-count" id="vote-4">0 szavazat</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/csoki.jpg" class="card-img-top" alt="Ajándék 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Csoki</h5>
+                        <button class="btn btn-primary voteBtn" data-id="5">Erre szavazok</button>
+                        <p class="vote-count" id="vote-5">0 szavazat</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/cipo.jpg" class="card-img-top" alt="Ajándék 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Cipő</h5>
+                        <button class="btn btn-primary voteBtn" data-id="6">Erre szavazok</button>
+                        <p class="vote-count" id="vote-6">0 szavazat</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/korcsolya.jpg" class="card-img-top" alt="Ajándék 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Korcsolya</h5>
+                        <button class="btn btn-primary voteBtn" data-id="7">Erre szavazok</button>
+                        <p class="vote-count" id="vote-7">0 szavazat</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/szanko.jpg" class="card-img-top" alt="Ajándék 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Szánkó</h5>
+                        <button class="btn btn-primary voteBtn" data-id="8">Erre szavazok</button>
+                        <p class="vote-count" id="vote-8">0 szavazat</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/billentyuzet.jpg" class="card-img-top" alt="Ajándék 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Billentyűzet</h5>
+                        <button class="btn btn-primary voteBtn" data-id="9">Erre szavazok</button>
+                        <p class="vote-count" id="vote-9">0 szavazat</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/eger.jpg" class="card-img-top" alt="Ajándék 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Egér</h5>
+                        <button class="btn btn-primary voteBtn" data-id="10">Erre szavazok</button>
+                        <p class="vote-count" id="vote-10">0 szavazat</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/fejhallgato.jpg" class="card-img-top" alt="Ajándék 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Fejhallgató</h5>
+                        <button class="btn btn-primary voteBtn" data-id="11">Erre szavazok</button>
+                        <p class="vote-count" id="vote-11">0 szavazat</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/zsakbamacska.jpg" class="card-img-top" alt="Ajándék 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Zsákba macska</h5>
+                        <button class="btn btn-primary voteBtn" data-id="12">Erre szavazok</button>
+                        <p class="vote-count" id="vote-12">0 szavazat</p>
+                    </div>
+                </div>
+            </div>
+
+            <script src="java.js"></script>
+        </div>
+    </div>

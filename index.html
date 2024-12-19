@@ -8,37 +8,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .card {
-            margin: 10px;
-        }
-        #story {
-            display: none;
-            margin-top: 20px;
-        }
-
-        body {
-        background-image: url('img/hoember.gif');
-        background-size: cover;  
-        background-position: center center;  
-        background-attachment: fixed;
-        }
-
-        .text-center {
-        color: white; 
-        }
-
-        #story{
-
-            color: white;
-
-        }
-
-        #max-vote {
-
-            color: black;
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -212,6 +181,22 @@
                         <p class="vote-count" id="vote-12">0 szavazat</p>
                     </div>
                 </div>
+            </div>
+
+
+            <div class="container">
+                <h2 class="text-center mt-5">Új ajándék hozzáadása</h2>
+                <form id="add-gift-form" class="mb-5">
+                    <div class="mb-3">
+                        <label for="gift-name" class="form-label">Ajándék neve</label>
+                        <input type="text" class="form-control" id="gift-name" placeholder="Pl.: Játék autó">
+                    </div>
+                    <div class="mb-3">
+                        <label for="gift-image" class="form-label">Ajándék képe (URL)</label>
+                        <input type="text" class="form-control" id="gift-image" placeholder="Pl.: img/jatekauto.jpg">
+                    </div>
+                    <button type="submit" class="btn btn-success">Hozzáadás</button>
+                </form>
             </div>
 
             <script src="java.js"></script>

@@ -1,0 +1,39 @@
+.card {
+    margin: 10px;
+}
+#story {
+    display: none;
+    margin-top: 20px;
+}
+
+body {
+background-image: url('img/hoember.gif');
+background-size: cover;  
+background-position: center center;  
+background-attachment: fixed;
+}
+
+.text-center {
+color: white; 
+}
+
+#story{
+
+    color: grey;
+
+    font-size: 20px;
+
+    background-color: lightcyan;
+
+    border-radius: 7px;
+
+    text-align: center;
+
+    
+
+}
+
+#max-vote {
+
+    color: black;
+}
